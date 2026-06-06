@@ -4,25 +4,25 @@ export const timeAgo = (date: string | number | Date): string => {
   const diffInSeconds = Math.floor((now.getTime() - past.getTime()) / 1000);
 
   if (diffInSeconds < 10) {
-    return "刚刚";
+    return "just now";
   }
   if (diffInSeconds < 60) {
-    return `${diffInSeconds} 秒前`;
+    return `${diffInSeconds} second${diffInSeconds === 1 ? "" : "s"} ago`;
   }
 
   const diffInMinutes = Math.floor(diffInSeconds / 60);
   if (diffInMinutes < 60) {
-    return `${diffInMinutes} 分钟前`;
+    return `${diffInMinutes} minute${diffInMinutes === 1 ? "" : "s"} ago`;
   }
 
   const diffInHours = Math.floor(diffInMinutes / 60);
   if (diffInHours < 24) {
-    return `${diffInHours} 小时前`;
+    return `${diffInHours} hour${diffInHours === 1 ? "" : "s"} ago`;
   }
 
   const diffInDays = Math.floor(diffInHours / 24);
   if (diffInDays < 7) {
-    return `${diffInDays} 天前`;
+    return `${diffInDays} day${diffInDays === 1 ? "" : "s"} ago`;
   }
 
   return new Date(date).toLocaleDateString();
