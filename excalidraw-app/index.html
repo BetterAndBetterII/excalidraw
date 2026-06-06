@@ -216,8 +216,8 @@
     </header>
     <div id="root"></div>
     <script type="module" src="index.tsx"></script>
-    <% if (typeof PROD != 'undefined' && PROD == true && (typeof VITE_APP_DISABLE_TRACKING == 'undefined' || VITE_APP_DISABLE_TRACKING != 'yes')) { %>
-    <!-- Analytics (skipped when VITE_APP_DISABLE_TRACKING=yes) -->
+    <% if (typeof PROD != 'undefined' && PROD == true && (typeof VITE_APP_DISABLE_TRACKING == 'undefined' || (VITE_APP_DISABLE_TRACKING != 'yes' && VITE_APP_DISABLE_TRACKING != 'true' && VITE_APP_DISABLE_TRACKING !== true))) { %>
+    <!-- Analytics (skipped when VITE_APP_DISABLE_TRACKING is enabled) -->
     <script>
       // need to load this script dynamically bcs. of iframe embed tracking
       var scriptEle = document.createElement("script");
