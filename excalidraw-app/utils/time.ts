@@ -7,7 +7,7 @@ export const timeAgo = (date: string | number | Date): string => {
     return "just now";
   }
   if (diffInSeconds < 60) {
-    return `${diffInSeconds} second${diffInSeconds === 1 ? "" : "s"} ago`;
+    return `${diffInSeconds} seconds ago`;
   }
 
   const diffInMinutes = Math.floor(diffInSeconds / 60);
