@@ -82,7 +82,7 @@ export const MyCreationsTab: React.FC<MyCreationsTabProps> = ({
                 />
               ) : (
                 <div className="my-creations-tab__card-thumbnail--placeholder">
-                  空空如也
+                  No preview
                 </div>
               )}
               <div className="my-creations-tab__card-info">
