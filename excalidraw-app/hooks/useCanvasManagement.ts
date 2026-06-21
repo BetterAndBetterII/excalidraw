@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 
+import { t } from "@excalidraw/excalidraw/i18n";
+
 import { CaptureUpdateAction } from "@excalidraw/element";
 
 import type { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types";
@@ -98,7 +100,7 @@ export const useCanvasManagement = ({
           await refreshCanvases();
         } catch (error: any) {
           if (error instanceof AuthError) {
-            setErrorMessage("您需要登录才能删除此画布。");
+            setErrorMessage(t("canvasManagement.loginToDelete"));
           } else {
             setErrorMessage("Could not delete the canvas.");
           }
@@ -137,7 +139,7 @@ export const useCanvasManagement = ({
         setCurrentCanvasId(createdCanvas.id);
       } catch (error: any) {
         if (error instanceof AuthError) {
-          setErrorMessage("您需要登录才能创建新画布。");
+          setErrorMessage(t("canvasManagement.loginToCreate"));
         } else {
           setErrorMessage("Could not create new canvas.");
         }
@@ -162,7 +164,7 @@ export const useCanvasManagement = ({
         }
       } catch (error: any) {
         if (error instanceof AuthError) {
-          setErrorMessage("您需要登录才能重命名此画布。");
+          setErrorMessage(t("canvasManagement.loginToRename"));
         } else {
           setErrorMessage("Could not rename the canvas.");
         }
@@ -200,7 +202,7 @@ export const useCanvasManagement = ({
         setCurrentCanvasId(createdCanvas.id);
       } catch (error: any) {
         if (error instanceof AuthError) {
-          setErrorMessage("您需要登录才能另存为新画布。");
+          setErrorMessage(t("canvasManagement.loginToSaveAs"));
         } else {
           setErrorMessage("Could not save as new canvas.");
         }
