@@ -653,5 +653,21 @@
     },
     "itemNotAvailable": "Command is not available...",
     "shortcutHint": "For Command palette, use {{shortcut}}"
+  },
+  "myCreations": {
+    "noThumbnail": "No preview"
+  },
+  "timeAgo": {
+    "justNow": "just now",
+    "secondsAgo": "{{count}}s ago",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago"
+  },
+  "canvasManagement": {
+    "loginToDelete": "You need to log in to delete this canvas.",
+    "loginToCreate": "You need to log in to create a new canvas.",
+    "loginToRename": "You need to log in to rename this canvas.",
+    "loginToSaveAs": "You need to log in to save as a new canvas."
   }
 }
