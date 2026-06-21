@@ -1,5 +1,7 @@
 import React from "react";
 
+import { t } from "@excalidraw/excalidraw/i18n";
+
 import clsx from "clsx";
 
 import { FilledButton } from "@excalidraw/excalidraw/components/FilledButton";
@@ -82,7 +84,7 @@ export const MyCreationsTab: React.FC<MyCreationsTabProps> = ({
                 />
               ) : (
                 <div className="my-creations-tab__card-thumbnail--placeholder">
-                  空空如也
+                  {t("myCreations.noThumbnail")}
                 </div>
               )}
               <div className="my-creations-tab__card-info">
