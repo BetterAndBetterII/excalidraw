@@ -533,5 +533,21 @@
     "description": "目前仅支持<flowchartLink>流程图</flowchartLink>、<sequenceLink>序列图</sequenceLink>和<classLink>类图</classLink>。其他类型在 Excalidraw 中将以图像呈现。",
     "syntax": "Mermaid 语法",
     "preview": "预览"
+  },
+  "myCreations": {
+    "noThumbnail": "空空如也"
+  },
+  "timeAgo": {
+    "justNow": "刚刚",
+    "secondsAgo": "{{count}} 秒前",
+    "minutesAgo": "{{count}} 分钟前",
+    "hoursAgo": "{{count}} 小时前",
+    "daysAgo": "{{count}} 天前"
+  },
+  "canvasManagement": {
+    "loginToDelete": "您需要登录才能删除此画布。",
+    "loginToCreate": "您需要登录才能创建新画布。",
+    "loginToRename": "您需要登录才能重命名此画布。",
+    "loginToSaveAs": "您需要登录才能另存为新画布。"
   }
 }
